@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.jetpackone.ui.main.MainFragment;
+import com.example.jitpacklibrary.LogUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
                     .replace(R.id.container, MainFragment.newInstance())
                     .commitNow();
         }
-
+        LogUtil.e();
     }
 }
